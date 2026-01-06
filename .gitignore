@@ -1,0 +1,12 @@
+node_modules/
+
+dist/
+build/
+.angular/
+.svelte-kit/
+.next/
+.nu/
+.output/
+
+.DS_Store
+*.log

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Vue.js: Contador Reactivo</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; padding-top: 50px; }
+        .contador-app { border: 2px solid #42b883; padding: 30px; border-radius: 8px; text-align: center; }
+        .contador-app h1 { color: #35495e; }
+        .contador-app button { padding: 10px 20px; margin: 0 10px; font-size: 1.2em; cursor: pointer; border: none; border-radius: 4px; transition: background-color 0.3s; }
+        .contador-app .btn-restar { background-color: #f44336; color: white; }
+        .contador-app .btn-sumar { background-color: #4CAF50; color: white; }
+        .contador-app p { font-size: 3em; font-weight: bold; margin: 20px 0; }
+    </style>
+</head>
+<body>
+
+    <div id="app" class="contador-app">
+        <h1>Contador Reactivo con Vue.js</h1>
+
+        <p>El valor actual es: {{ contador }}</p>
+
+        <button @click="restar" class="btn-restar">Restar (-1)</button>
+        <button @click="sumar" class="btn-sumar">Sumar (+1)</button>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script>
+        // Desestructuramos las funciones clave de Vue
+        const { createApp } = Vue;
+
+        createApp({
+            // A. DATA: Aquí se definen los datos reactivos
+            data() {
+                return {
+                    contador: 0 // El estado inicial del contador
+                }
+            },
+            
+            // B. METHODS: Aquí se definen las funciones que responden a eventos
+            methods: {
+                sumar() {
+                    // Al modificar 'this.contador', Vue actualiza automáticamente el HTML
+                    this.contador++;
+                },
+                restar() {
+                    this.contador--;
+                }
+            }
+        // C. MONTAJE: Conecta la instancia de Vue con el elemento HTML con id="app"
+        }).mount('#app'); 
+    </script>
+
+</body>
+</html>
