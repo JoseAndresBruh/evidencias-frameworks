@@ -1,0 +1,10 @@
+INSTRUCCIONES PARA EJECUTAR (QWIK):
+
+1. Abrir esta carpeta en la terminal.
+2. Instalar dependencias (obligatorio):
+   Escribir: npm install
+
+3. Correr el proyecto:
+   Escribir: npm start
+
+4. Abrir en el navegador la dirección que muestre la terminal (usualmente http://localhost:5173).

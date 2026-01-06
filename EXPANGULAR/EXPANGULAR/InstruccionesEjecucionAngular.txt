@@ -1,0 +1,11 @@
+INSTRUCCIONES PARA EJECUTAR (ANGULAR):
+
+1. Abrir esta carpeta en la terminal.
+2. Instalar dependencias (obligatorio):
+   Escribir: npm install
+   (Esperar a que termine la instalación).
+
+3. Correr el proyecto:
+   Escribir: ng serve
+   
+4. Abrir en el navegador: http://localhost:4200 (o el que se muestre en la terminal)

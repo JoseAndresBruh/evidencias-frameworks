@@ -1,0 +1,10 @@
+INSTRUCCIONES PARA EJECUTAR (SVELTE):
+
+1. Abrir esta carpeta en la terminal.
+2. Instalar dependencias (obligatorio):
+   Escribir: npm install
+
+3. Correr el proyecto:
+   Escribir: npm run dev -- --open
+
+4. El navegador debería abrirse automáticamente o visite http://localhost:5173 (o el mostrado en terminal)
