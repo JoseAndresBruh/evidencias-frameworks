@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #041439;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  font-size: calc(10px + 2vmin);
+  color: rgb(227, 225, 236);
+  margin: 5px;
+  p {
+    margin-left: 300px;
+    font-size: 50px;
+    
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h2 {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: #041848;
+  }
+
+button {
+  background-color: rgb(171, 171, 171);
+  margin: 3px;
+  padding: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  border-style: none;
+  cursor: pointer;
+}
+
+.componentes {
+  display: flex;
+  flex-direction: row;
+  margin-left: 13%;
+  margin-top: 5%;
+}
+
+.componente1 {
+  padding: 5px;
+  margin: 24px;
+  border-style: groove;
+  border-width: 3px;
+  border-color: #041848;
+  max-width: 20vw;
+  p {
+    margin: 5px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+}
+
+.lista {
+  padding: 5px;
+  margin: 24px;
+  border-style: groove;
+  border-width: 3px;
+  border-color: #041848;
+  max-width: 20vw;
+}
+
+.contador {
+  padding: 5px;
+  margin: 24px;
+  border-style: groove;
+  border-width: 3px;
+  border-color: #041848;
+  max-width: 20vw;
+  button {
+    margin: 5px;
+  }
+}
+
+.rojo {
+  background-color: rgb(243, 75, 75);
+}
+
+.verde {
+  background-color: rgb(87, 237, 87);
+}
+
